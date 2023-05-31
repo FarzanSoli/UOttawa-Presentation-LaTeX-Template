@@ -1,0 +1,179 @@
+\documentclass[xcolor=table]{beamer}
+\usepackage{hyperref}
+\usepackage[T1]{fontenc}
+\usepackage{booktabs,tikz,xtab, multirow}
+\usepackage{color}
+\usepackage{tabularray}
+% other packages
+\usepackage{latexsym,amsmath,xcolor,multicol,booktabs,calligra}
+\usepackage{graphicx,pstricks,listings,stackengine}
+% dummy text; remove it when working on this template
+\usepackage{lipsum}
+\usepackage{Presentation_theme}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\author{{Your Name}\\
+{\textit{\textbf{Supervisors:}}} \\
+{Supervisor Name,} {Co-Supervisor Name}}
+
+\title{Title of your presentation}
+\subtitle{PhD Thesis (Master's) (Proposal)}
+\institute{Department, University of Ottawa}
+% defs
+\def\cmd#1{\texttt{\color{red}\footnotesize $\backslash$#1}}
+\def\env#1{\texttt{\color{blue}\footnotesize #1}}
+\definecolor{deepblue}{rgb}{0,0,0.5}
+\definecolor{deepred}{rgb}{0.6,0,0}
+\definecolor{deepgreen}{rgb}{0,0.5,0}
+\definecolor{halfgray}{gray}{0.55}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lstset{
+    basicstyle=\ttfamily\small,
+    keywordstyle=\bfseries\color{deepblue},
+    emphstyle=\ttfamily\color{deepred},    % Custom highlighting style
+    stringstyle=\color{deepgreen},
+    numbers=left,
+    numberstyle=\small\color{halfgray},
+    rulesepcolor=\color{blue!20!red!20!green!20!},
+    frame=shadowbox,
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+%---------------------------------
+\begin{frame}
+    \titlepage
+    \begin{figure}[htpb]
+        \begin{center}
+            \includegraphics[keepaspectratio, scale=0.08]{figs/uottawa_logo.JPG}
+        \end{center}
+    \end{figure}
+\end{frame}
+%---------------------------------
+%---------------------------------
+\begin{frame}
+    \tableofcontents[sectionstyle=show,subsectionstyle=show/shaded/hide,subsubsectionstyle=show/shaded/hide]
+\end{frame}
+% ================================
+\section{Motivation}
+% ================================
+\begin{frame}{Motivation}
+    \begin{itemize}%[<+-| alert@+>] % stepwise alerts
+        \item Represent the motivation for your work
+        \item\textbf{Project Goal:} \\
+        Concisely explain the main goal of this project.
+    \end{itemize}
+\end{frame}
+%---------------------------------
+% ================================
+\section{Background}
+% ================================
+%---------------------------------
+\begin{frame}{Background}
+    %-----------------------------
+    \begin{minipage}[c]{1\linewidth}
+        \begin{figure}[H]
+         \centering
+         \includegraphics[width = 0.4\textwidth]{figs/fig.png}
+         \label{fig:fig}
+         \caption{Explain your figures.}
+        \end{figure}
+    \end{minipage}
+    %-----------------------------
+\end{frame}
+%---------------------------------
+% ================================
+\section{Methodology}
+% ================================
+% ================================
+\subsection{methodology subsections}
+% ================================
+%---------------------------------
+\begin{frame}{Methods}
+    \begin{itemize}
+        \item explain your methods (add figures if any).
+        \item add or remove subsections if your methodology includes more than one components.
+    \end{itemize}
+\end{frame}
+%---------------------------------
+% ================================
+\section{Results \& Discussion}
+% ================================
+\begin{frame}{Datasets}
+    \begin{itemize}
+        \item Explain your datasets (if any).
+    \end{itemize}
+\end{frame}
+%---------------------------------
+\begin{frame}{Conclusion}
+    \begin{itemize}
+        \item conclude your work.
+    \end{itemize}
+    %-----------------------------
+    \begin{minipage}[c]{1\linewidth}
+        % \begin{figure}[H]
+        % \centering
+        % \includegraphics[width = 0.75\textwidth]{figs/case_study.eps}
+        % \label{fig:case_study}
+        % \end{figure}
+    \end{minipage}
+    %-----------------------------
+\end{frame}
+%---------------------------------
+% ================================
+\section{Future Work}
+% ================================
+\begin{frame}{Future Work}
+    \begin{itemize}
+        \item explain your potential future work (if any).
+    \end{itemize}
+    %------------------------------
+    \begin{minipage}[c]{1\linewidth}
+        % \begin{figure}[H]
+        %  \centering
+        %  \includegraphics[width = 0.65\textwidth]{figs/future_work_graph.eps}
+        %  \label{fig:future_work_graph}
+        % \end{figure}
+    \end{minipage}
+    %------------------------------
+\end{frame}
+%------------------------------
+% ================================
+\section{Acknowledgments}
+% ================================
+
+\begin{frame}{Acknowledgments}
+    \begin{itemize}
+        \item Supervisors:
+        \begin{itemize}
+            \item supervisor
+            \item co-supervisor
+        \end{itemize}
+        \item Collaboration:
+        \begin{itemize}
+            \item collaborator-1
+            \item collaborator-2
+        \end{itemize}
+        \end{itemize}
+\end{frame}
+%----------------------------------
+\begin{frame}
+    \begin{center}
+        {\Huge\calligra Thank You}
+    \end{center}
+\end{frame}
+%----------------------------------
+% ================================
+\section{References}
+% ================================
+%----------------------------------
+\begin{frame}[allowframebreaks]
+    \bibliography{reference}
+    \bibliographystyle{ieeetr}
+    \nocite{*} % used here because no citation happens in slides
+    % if there are too many try use：
+    % \tiny\bibliographystyle{alpha}
+\end{frame}
+%----------------------------------
+
+
+
+\end{document}
